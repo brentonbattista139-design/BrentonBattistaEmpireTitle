@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Brenton Battista | Title Insurance Rep – Colorado Springs | Empire Title</title>
+<meta name="description" content="Brenton Battista is a trusted Title Insurance Representative at Empire Title in Colorado Springs, CO. Offering title search tools, closing cost estimators, farming tools, and printing resources."/>
+<meta name="keywords" content="title insurance Colorado Springs, Empire Title rep, closing cost estimator Colorado Springs, title search Colorado Springs, Brenton Battista"/>
+<meta property="og:title" content="Brenton Battista | Empire Title – Colorado Springs"/>
+<meta property="og:description" content="Title Insurance Representative serving Colorado Springs with Empire Title. Tools, resources, and local expertise."/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #4B0082;
+    --slate: #6A0DAD;
+    --accent: #9B59B6;
+    --light: #F9F6FC;
+    --white: #ffffff;
+    --gray: #6B7280;
+    --border: #E8DDEF;
+    --gold: #7B2FBE;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Georgia', serif; color: var(--navy); background: var(--white); }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; width: 100%; background: var(--white);
+    border-bottom: 1px solid var(--border); z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 60px;
+  }
+  .nav-logo { font-size: 0.85rem; font-family: sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy); font-weight: 700; }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a { text-decoration: none; font-family: sans-serif; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: var(--light); padding: 120px 60px 80px;
+    text-align: center; flex-direction: column;
+  }
+  .hero-eyebrow {
+    font-family: sans-serif; font-size: 0.78rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 20px;
+  }
+  .hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); color: var(--navy); line-height: 1.15; margin-bottom: 16px; }
+  .hero-sub {
+    font-family: sans-serif; font-size: 1rem; color: var(--gray);
+    max-width: 500px; line-height: 1.7; margin-bottom: 40px;
+  }
+  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .btn-primary {
+    background: var(--navy); color: var(--white); padding: 14px 32px;
+    font-family: sans-serif; font-size: 0.82rem; letter-spacing: 0.1em;
+    text-transform: uppercase; border: none; cursor: pointer; transition: background 0.2s;
+    text-decoration: none;
+  }
+  .btn-primary:hover { background: var(--slate); }
+  .btn-outline {
+    background: transparent; color: var(--navy); padding: 14px 32px;
+    font-family: sans-serif; font-size: 0.82rem; letter-spacing: 0.1em;
+    text-transform: uppercase; border: 1.5px solid var(--navy); cursor: pointer;
+    transition: all 0.2s; text-decoration: none;
+  }
+  .btn-outline:hover { background: var(--navy); color: var(--white); }
+  .hero-badge {
+    margin-top: 60px; display: inline-flex; align-items: center; gap: 10px;
+    font-family: sans-serif; font-size: 0.78rem; color: var(--gray); letter-spacing: 0.05em;
+  }
+  .hero-badge::before, .hero-badge::after { content: ''; display: block; width: 40px; height: 1px; background: var(--border); }
+
+  /* SECTIONS */
+  section { padding: 100px 60px; max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-family: sans-serif; font-size: 0.72rem; letter-spacing: 0.25em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+  }
+  .section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--navy); margin-bottom: 20px; }
+  .section-line { width: 48px; height: 2px; background: var(--gold); margin-bottom: 36px; }
+  .section-body { font-family: sans-serif; font-size: 0.97rem; color: var(--gray); line-height: 1.85; max-width: 640px; }
+
+  /* ABOUT */
+  #about { border-top: 1px solid var(--border); }
+
+  /* TOOLS GRID */
+  #tools { border-top: 1px solid var(--border); }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 0; }
+  .tool-card {
+    border: 1px solid var(--border); padding: 36px 28px; transition: all 0.2s;
+    background: var(--white);
+  }
+  .tool-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(27,42,74,0.07); }
+  .tool-icon { font-size: 1.8rem; margin-bottom: 18px; }
+  .tool-card h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 10px; }
+  .tool-card p { font-family: sans-serif; font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
+  .tool-link {
+    display: inline-block; margin-top: 18px; font-family: sans-serif;
+    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+  }
+
+  /* WHY */
+  #why { border-top: 1px solid var(--border); background: var(--light); max-width: 100%; padding: 100px 60px; }
+  #why .inner { max-width: 1100px; margin: 0 auto; }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 0; }
+  .why-item h4 { font-size: 1rem; color: var(--navy); margin-bottom: 8px; }
+  .why-item p { font-family: sans-serif; font-size: 0.85rem; color: var(--gray); line-height: 1.75; }
+  .why-num { font-size: 2rem; color: var(--border); font-family: sans-serif; font-weight: 700; margin-bottom: 10px; }
+
+  /* CONTACT */
+  #contact { border-top: 1px solid var(--border); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 0; }
+  .contact-info { font-family: sans-serif; }
+  .contact-info p { font-size: 0.9rem; color: var(--gray); line-height: 1.85; margin-bottom: 28px; }
+  .contact-detail { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 18px; }
+  .contact-detail .icon { font-size: 1rem; margin-top: 2px; }
+  .contact-detail span { font-size: 0.88rem; color: var(--navy); font-family: sans-serif; }
+  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+  .contact-form input, .contact-form textarea {
+    padding: 14px 16px; border: 1px solid var(--border); font-family: sans-serif;
+    font-size: 0.88rem; color: var(--navy); outline: none; background: var(--light);
+    resize: vertical; transition: border-color 0.2s;
+  }
+  .contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); }
+  .contact-form textarea { min-height: 130px; }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border); padding: 36px 60px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+  }
+  footer p { font-family: sans-serif; font-size: 0.78rem; color: var(--gray); }
+  footer .footer-brand { font-family: sans-serif; font-size: 0.78rem; color: var(--navy); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  footer .footer-brand span { color: var(--gold); }
+
+  @media (max-width: 700px) {
+    nav { padding: 16px 24px; }
+    .nav-links { display: none; }
+    .hero, section { padding: 80px 24px 60px; }
+    #why { padding: 80px 24px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    footer { padding: 28px 24px; flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo" style="display:flex;align-items:center;gap:12px;">
+    <img src="YOUR_LOGO_URL_HERE" alt="Empire Title Logo" style="height:36px;width:auto;" onerror="this.style.display='none'"/>
+    Brenton Battista &nbsp;|&nbsp; <span>Empire Title</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#why">Why Empire</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">Empire Title &mdash; Colorado Springs, CO</div>
+  <div style="width:150px;height:150px;border-radius:50%;overflow:hidden;margin-bottom:28px;border:3px solid var(--border);background:#f0eaf7;display:flex;align-items:center;justify-content:center;">
+    <img src="YOUR_HEADSHOT_URL_HERE" alt="Brenton Battista" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:3rem\'>👤</span>'"/>
+  </div>
+  <h1>Brenton Battista</h1>
+  <p class="hero-sub">Title Insurance Representative helping buyers, sellers, and agents close with confidence in Colorado Springs and beyond.</p>
+  <div class="hero-btns">
+    <a href="#tools" class="btn-primary">View Tools &amp; Resources</a>
+    <a href="#contact" class="btn-outline">Get in Touch</a>
+  </div>
+  <div class="hero-badge">Locally Rooted &nbsp; Professionally Driven</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">About</div>
+  <h2 class="section-title">Your Local Title Expert</h2>
+  <div class="section-line"></div>
+  <p class="section-body">
+    I'm Brenton Battista, a Title Insurance Representative with Empire Title in Colorado Springs, CO. I work alongside real estate agents, lenders, buyers, and sellers to ensure every transaction closes smoothly, accurately, and on time. With deep knowledge of Colorado's title and closing process, I'm here to be a reliable partner from contract to close.
+  </p>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="section-label">Tools &amp; Resources</div>
+  <h2 class="section-title">Everything You Need to Close</h2>
+  <div class="section-line"></div>
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tool-icon">🔍</div>
+      <h3>Title Search Tools</h3>
+      <p>Access property history, lien searches, and ownership records quickly and accurately through Empire Title's trusted search platform.</p>
+      <a href="#contact" class="tool-link">Learn More →</a>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">💰</div>
+      <h3>Net Sheet / Closing Cost Estimator</h3>
+      <p>Give your clients clear, upfront estimates on closing costs so there are no surprises at the closing table.</p>
+      <a href="https://empiretitle.titlecapture.com/" target="_blank" class="tool-link">Open Net Sheet Tool →</a>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">🌾</div>
+      <h3>Farming Tools</h3>
+      <p>Targeted resources to help real estate agents build and grow their geographic farm areas — from data to marketing support.</p>
+      <a href="http://www.etgeoco.com" target="_blank" class="tool-link">Explore Farming Tools →</a>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">🖨️</div>
+      <h3>Printing Resources</h3>
+      <p>Professional-quality printed materials including flyers, mailers, and closing packages to keep your brand sharp and your clients informed.</p>
+      <a href="https://partner.bearprinting.com/PartnerRegister.jsp?salesRep=55016" target="_blank" class="tool-link">Order Printing →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<div id="why">
+  <div class="inner">
+    <div class="section-label">Why Empire Title</div>
+    <h2 class="section-title">Built on Trust &amp; Local Expertise</h2>
+    <div class="section-line"></div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <h4>Colorado Springs Focused</h4>
+        <p>Deep roots in the local market means faster, more accurate title work for every transaction.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <h4>Reliable &amp; On Time</h4>
+        <p>We keep closings on schedule with proactive communication and meticulous attention to detail.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <h4>Agent-First Approach</h4>
+        <p>From farming support to printing resources, we equip agents with tools that grow their business.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <h4>Backed by Empire Title</h4>
+        <p>One of Colorado's most trusted title companies, with the reputation and resources to match.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">Contact</div>
+  <h2 class="section-title">Let's Work Together</h2>
+  <div class="section-line"></div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p>Whether you have a transaction in progress or just want to learn more about what Empire Title can offer, I'd love to connect.</p>
+      <div class="contact-detail">
+        <span class="icon">📍</span>
+        <span>Colorado Springs, CO</span>
+      </div>
+      <div class="contact-detail">
+        <span class="icon">🏢</span>
+        <span>Empire Title</span>
+      </div>
+      <div class="contact-detail">
+        <span class="icon">📧</span>
+        <a href="mailto:brenton@etcos.com" style="color:var(--navy);text-decoration:none;">brenton@etcos.com</a>
+      </div>
+      <div class="contact-detail">
+        <span class="icon">📞</span>
+        <a href="tel:7197237712" style="color:var(--navy);text-decoration:none;">(719) 723-7712</a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <input type="text" id="cf-name" placeholder="Your Name"/>
+      <input type="email" id="cf-email" placeholder="Your Email"/>
+      <input type="text" id="cf-subject" placeholder="Subject"/>
+      <textarea id="cf-message" placeholder="Your Message"></textarea>
+      <button class="btn-primary" style="width:fit-content" onclick="
+        var n=document.getElementById('cf-name').value;
+        var e=document.getElementById('cf-email').value;
+        var s=document.getElementById('cf-subject').value;
+        var m=document.getElementById('cf-message').value;
+        if(!n||!e||!m){alert('Please fill in your name, email, and message.');return;}
+        var body='Name: '+n+'%0AEmail: '+e+'%0A%0A'+encodeURIComponent(m);
+        window.location.href='mailto:brenton@etcos.com?subject='+encodeURIComponent(s||'Portfolio Inquiry')+'&body='+body;
+      ">Send Message</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Brenton Battista &nbsp;|&nbsp; <span>Empire Title</span></div>
+  <p>&copy; 2026 Brenton Battista &mdash; Colorado Springs, CO. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
